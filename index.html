@@ -86,7 +86,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://orangemo0n.github.io/" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
@@ -129,7 +129,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://orangemo0n.github.io/" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
@@ -178,6 +178,29 @@
         <a href="/2020/02/15/Hexo%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" class="archive-article-date">
   	<time datetime="2020-02-15T04:07:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-15</time>
 </a>
+		<!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+			<div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">779字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">3分</span>
+      </span>
+    </span>
+</div>
+		
+        <!-- 添加完成 -->
         
       </header>
     
@@ -185,34 +208,9 @@
       
         <h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><p>​    确保安装了nodeJs，配置国内镜像源，使用cnpm安装hexo，输入命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2020/02/15/Hexo%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/16388343-b595eb109ced3d56.webp" alt="hexo安装命令"></p>
-<h1 id="本地搭建hexo博客"><a href="#本地搭建hexo博客" class="headerlink" title="本地搭建hexo博客"></a>本地搭建hexo博客</h1><p>​    本地新建文件blog保存hexo的博客内容</p>
-<p>​    切换到该文件下</p>
-<p>​    输入命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p>​    完成之后，浏览器访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a> ，即可看到hexo博客页面</p>
-<h1 id="博客托管到github"><a href="#博客托管到github" class="headerlink" title="博客托管到github"></a>博客托管到github</h1><p>​    在GitHub上创建以你的<strong>GitHub用户名（注意不是昵称）</strong>命名的项目，例如我的GitHub用户名为 OrangeMo0n 那么我就创建一个名字为: orangemo0n.github.io的项目</p>
-<p>​    打开刚才新建的blog文件夹（存放hexo模板的），打开_config.yml配置文件，找到deploy，进行如下配置，完成保存。注意格式不能错，一定不能错，千万不能错。</p>
-<p><img src="/2020/02/15/Hexo%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/1581751867134.png" alt="hexo博客文件夹目录"></p>
-<p><img src="/2020/02/15/Hexo%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/1581751973750.png" alt="hexo根目录配置文件"></p>
-<ol>
-<li><p>冒号后面一定要有一个空格</p>
-</li>
-<li><p>type，repository，branch的首字母要对齐 </p>
-<p>最后，运行下面这三个命令</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git –save</span><br><span class="line">hexo g  //（本地生成静态文件）</span><br><span class="line">hexo d  //（将本地静态文件推送至Github）</span><br></pre></td></tr></table></figure>
-
-<p>​     此时，打开浏览器，访问 <a href="https://orangemo0n.github.io/" target="_blank" rel="noopener">https://orangemo0n.github.io/</a> </p>
-<h1 id="配置blog页面主题"><a href="#配置blog页面主题" class="headerlink" title="配置blog页面主题"></a>配置blog页面主题</h1><p>网址：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br></pre></td></tr></table></figure>
-
-<p> 打开博客文件根目录下的_config.yml文件，进行修改 </p>
-<p><img src="/2020/02/15/Hexo%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/1581752534305.png" alt="修改配置文件的主题设置"></p>
-
+        
+          <a class="article-more-a" href="/2020/02/15/Hexo%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/#more">more >></a>
+        
       
 
       
@@ -291,6 +289,29 @@
         <a href="/2020/02/15/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%91%BD%E4%BB%A4%E5%A4%87%E5%BF%98/" class="archive-article-date">
   	<time datetime="2020-02-15T03:53:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-15</time>
 </a>
+		<!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+			<div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">41字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
+		
+        <!-- 添加完成 -->
         
       </header>
     
@@ -381,6 +402,29 @@
         <a href="/2020/01/18/hello-world/" class="archive-article-date">
   	<time datetime="2020-01-18T15:23:33.112Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-18</time>
 </a>
+		<!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+			<div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">73字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
+		
+        <!-- 添加完成 -->
         
       </header>
     
