@@ -399,7 +399,7 @@ var gitalk = new Gitalk({
   repo: 'hexoBlogComments',
   owner: 'orangemo0n@163.com',
   admin: ['orangemo0n@163.com'],
-  id: md5(window.location.pathname),
+  id: location.pathname,
   distractionFreeMode: true
 })
 
