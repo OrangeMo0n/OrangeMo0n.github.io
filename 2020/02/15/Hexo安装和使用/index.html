@@ -461,7 +461,7 @@ var gitalk = new Gitalk({
   clientID: 'e6c19704d22fe6dab41f',
   clientSecret: 'e4a0ff9c15ce400d8c276d73ac095d60b6e93e2a',
   repo: 'hexoBlogComments',
-  id: window.location.pathname,
+  id: md5(window.location.pathname),
   owner: 'OrangeMo0n',
   admin: 'OrangeMo0n',
   distractionFreeMode: true
